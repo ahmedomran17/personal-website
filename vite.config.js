@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // This makes all paths relative instead of absolute
+  base: '/personal-website/', // This makes paths work on GitHub Pages
 })
