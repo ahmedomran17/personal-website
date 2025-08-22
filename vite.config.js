@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/personal-website/', // This makes paths work on GitHub Pages
+  base: '', // This makes paths work on GitHub Pages
 })
