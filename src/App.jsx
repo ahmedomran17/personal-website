@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Hobbies from './pages/Hobbies';
+
 
 // Project Detail Pages
 import CNCFinalCAD from './pages/projects/CNCFinalCAD';
@@ -29,7 +29,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Navigate to="/about" replace />} />
-            <Route path="/hobbies" element={<Hobbies />} />
+
             
             {/* Project Detail Routes */}
             <Route path="/projects/cnc-final-cad" element={<CNCFinalCAD />} />

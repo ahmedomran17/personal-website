@@ -6,7 +6,6 @@ const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Projects", path: "/projects" },
-  { name: "Hobbies", path: "/hobbies" },
 ];
 
 export default function Navbar() {
