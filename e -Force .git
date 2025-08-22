@@ -1,0 +1,5 @@
+[33mdd89a38[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m populated all the project pages!
+[33mffb7778[m populated project pages and fixed content. remaining: crosswalk
+[33m9c43b42[m Made some frontend styling improvements, added dark theme interactivity to project pages
+[33m6e1b7b0[m added light and dark themes. fixed about me page
+[33m07647f0[m feat: implement random background system with DotGrid and LetterGlitch
