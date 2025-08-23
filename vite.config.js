@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Use relative paths
+  base: '/personal-website', // Use relative paths
   build: {
     outDir: 'docs',
     copyPublicDir: true, // Ensure public folder is copied

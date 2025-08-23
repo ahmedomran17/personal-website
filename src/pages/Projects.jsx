@@ -5,7 +5,7 @@ import { useTheme } from '../contexts/ThemeContext';
 const items = [
     {
       id: "1",
-      img: "/CNC_Final_CAD.png",
+      img: "/personal-website/CNC_Final_CAD.png",
       url: "/projects/cnc-final-cad",
       height: 420,
       title: "CNC Machine Design",
@@ -13,7 +13,7 @@ const items = [
     },
     {
       id: "2",
-      img: "/crosswalk_model.png",
+      img: "/personal-website/crosswalk_model.png",
       url: "/projects/crosswalk-model",
       height: 320,
       title: "Walkable Cities",
@@ -21,7 +21,7 @@ const items = [
     },
     {
       id: "3",
-      img: "/Arduino/digital_thermometer.jpg",
+      img: "/personal-website/Arduino/digital_thermometer.jpg",
       url: "/projects/embedded-systems",
       height: 600,
       title: "Intro to Embedded Systems",
@@ -29,7 +29,7 @@ const items = [
     },
     {
       id: "4",
-      img: "/gear_box.jpg",
+      img: "/personal-website/gear_box.jpg",
       url: "/projects/gear-box",
       height: 450,
       title: "Gear Box",
@@ -37,7 +37,7 @@ const items = [
     },
     {
       id: "5",
-      img: "/piston.JPG",
+      img: "/personal-website/piston.JPG",
       url: "/projects/piston",
       height: 720,
       title: "Piston Assembly",
@@ -45,7 +45,7 @@ const items = [
     },
     {
       id: "6",
-      img: "/robotic_hand/Full Working setup.JPG",
+      img: "/personal-website/robotic_hand/Full Working setup.JPG",
       url: "/projects/robotic-hand",
       height: 680,
       title: "Robotic Hand",
@@ -53,7 +53,7 @@ const items = [
     },
     {
       id: "7",
-      img: "/steering_assm.PNG",
+      img: "/personal-website/steering_assm.PNG",
       url: "/projects/steering-assembly",
       height: 480,
       title: "Steering Assembly",
@@ -61,7 +61,7 @@ const items = [
     },
     {
       id: "8",
-      img: "/skin-classifier-images/Primary model Architecture.jpg",
+      img: "/personal-website/skin-classifier-images/Primary model Architecture.jpg",
       url: "/projects/skin-cancer-classification",
       height: 520,
       title: "Skin Cancer Classification",

@@ -28,7 +28,7 @@ export default function About() {
           </div>
           <div className="flex-shrink-0">
             <img 
-              src="/headshot.JPG" 
+              src="/personal-website/headshot.JPG" 
               alt="Ahmed Omran - Professional Headshot" 
               className="w-40 h-40 rounded-full object-cover border-2 border-white shadow-lg"
             />
@@ -39,7 +39,7 @@ export default function About() {
       {/* Download Resume Button */}
       <div className="text-center mb-16">
         <a
-          href="/Ahmed_Omran_Resume.pdf"
+          href="/personal-website/Ahmed_Omran_Resume.pdf"
           download
           className={`inline-block px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all duration-200 hover:scale-105 ${
             isDark 
@@ -85,7 +85,7 @@ export default function About() {
                 </p>
               </div>
               <img 
-                src="/Utoronto_coa.svg.png" 
+                src="/personal-website/Utoronto_coa.svg.png" 
                 alt="University of Toronto Logo" 
                 className="w-24 h-24 object-contain ml-1"
               />

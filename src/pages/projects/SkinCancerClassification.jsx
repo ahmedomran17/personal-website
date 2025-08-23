@@ -4,7 +4,7 @@ const SkinCancerClassification = () => {
   const projectData = {
     title: "Deep Learning for Skin Cancer Classification",
     subtitle: "Leveraging CNNs and Transfer Learning for Early Melanoma Detection",
-    heroImage: "/skin-classifier-images/Primary model Architecture.jpg",
+    heroImage: "/personal-website/skin-classifier-images/Primary model Architecture.jpg",
     description: "This project aimed to develop an AI-powered diagnostic tool capable of detecting skin cancer from dermoscopic images with dermatologist-level accuracy. Using the ISIC 2019 dataset of over 25,000 images across eight lesion types, our team explored deep learning methods to classify both malignant and benign cases. By fine-tuning a ResNet-50 model and implementing data preprocessing strategies, we sought to improve accessibility and accuracy in skin cancer screening, particularly in areas with limited medical expertise.",
     
     techSpecs: [
@@ -49,27 +49,27 @@ const SkinCancerClassification = () => {
 
     gallery: [
       {
-        src: "/skin-classifier-images/dataset distribution.png",
+        src: "/personal-website/skin-classifier-images/dataset distribution.png",
         caption: "Class distribution in dataset"
       },
       {
-        src: "/skin-classifier-images/sample images.png",
+        src: "/personal-website/skin-classifier-images/sample images.png",
         caption: "Sample dermoscopic images from the dataset"
       },
       {
-        src: "/skin-classifier-images/primary model accuracy.png",
+        src: "/personal-website/skin-classifier-images/primary model accuracy.png",
         caption: "Training and validation accuracy/loss curves"
       },
       {
-        src: "/skin-classifier-images/binary_confusion.png",
+        src: "/personal-website/skin-classifier-images/binary_confusion.png",
         caption: "Confusion matrix for binary classification (class 0: non-cancerous) (class 1: cancerous)"
       },
       {
-        src: "/skin-classifier-images/primary_confusion.png",
+        src: "/personal-website/skin-classifier-images/primary_confusion.png",
         caption: "8-class confusion matrix for multi-class classification"
       },
       {
-        src: "/skin-classifier-images/baseline_architecture.png",
+        src: "/personal-website/skin-classifier-images/baseline_architecture.png",
         caption: "Baseline model architecture overview"
       }
     ],
@@ -77,7 +77,7 @@ const SkinCancerClassification = () => {
     videos: [
       {
         title: "Model Prediction Demo",
-        url: "/skin-classifier-images/model_demo.mp4",
+        url: "/personal-website/skin-classifier-images/model_demo.mp4",
         caption: "Model prediction demo"
       }
     ],
@@ -91,13 +91,13 @@ const SkinCancerClassification = () => {
 
 
     nextProject: {
-      title: "CNC Machine Design",
-      slug: "cnc-final-cad"
+      title: "Steering Assembly",
+      slug: "steering-assembly"
     },
     
     prevProject: {
-      title: "Steering Assembly",
-      slug: "steering-assembly"
+      title: "Robotic Hand",
+      slug: "robotic-hand"
     }
   };
 

@@ -4,7 +4,7 @@ const SteeringAssembly = () => {
   const projectData = {
     title: "USTM Mechanical Systems",
     subtitle: "University of Toronto Supermileage Team",
-    heroImage: "/steering_assm.PNG",
+    heroImage: "/personal-website/steering_assm.PNG",
     description:
       "As a member of the University of Toronto Supermileage Team, I contributed to the design and fabrication of mechanical systems for the Urban Concept Car. My work spanned CAD modeling, machining, and hands-on assembly, focusing on improving steering performance, braking integration, and component manufacturability.",
 
@@ -44,27 +44,27 @@ const SteeringAssembly = () => {
 
     gallery: [
       {
-        src: "/steering_assm.PNG",
+        src: "/personal-website/steering_assm.PNG",
         caption: "CAD model of full steering assembly"
       },
       {
-        src: "/UTSM/close_up.PNG",
+        src: "/personal-website/UTSM/close_up.PNG",
         caption: "Close-up detail of the previous (vertical) steering mechanism"
       },
       {
-        src: "/UTSM/King-pin-assembly-cross-section.PNG",
+        src: "/personal-website/UTSM/King-pin-assembly-cross-section.PNG",
         caption: "Cross-sectional view of the kingpin steering mechanism showing internal geometry"
       },
       {
-        src: "/UTSM/stock-alumnium-rods.JPG",
+        src: "/personal-website/UTSM/stock-alumnium-rods.JPG",
         caption: "Stock aluminum rods used as raw material for front wheel axles"
       },
       {
-        src: "/UTSM/reduced axle.JPG",
+        src: "/personal-website/UTSM/reduced axle.JPG",
         caption: "Machined front axle with precision chamfers and diameter reductions"
       },
       {
-        src: "/UTSM/Lathe-Machined-thread.JPG",
+        src: "/personal-website/UTSM/Lathe-Machined-thread.JPG",
         caption: "Precision lathe machining of threaded axle"
       }
     ],
@@ -90,8 +90,8 @@ const SteeringAssembly = () => {
     },
 
     prevProject: {
-      title: "Robotic Hand",
-      slug: "robotic-hand"
+      title: "Skin Cancer Classification",
+      slug: "skin-cancer-classification"
     }
   };
 

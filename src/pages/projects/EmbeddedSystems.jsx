@@ -4,7 +4,7 @@ const EmbeddedSystems = () => {
   const projectData = {
     title: "Intro to Embedded Systems",
     subtitle: "Arduino Starter Kit & ESP32 Games",
-    heroImage: "/Arduino/digital_thermometer.jpg",
+    heroImage: "/personal-website/Arduino/digital_thermometer.jpg",
     description: 
       "Hands-on introduction to embedded systems using Arduino and ESP32 microcontrollers. "
       + "The Arduino Starter Kit established core knowledge in sensors, actuators, displays, and digital interfaces. "
@@ -63,28 +63,28 @@ const EmbeddedSystems = () => {
     videos: [
       {
         title: "Digital Thermometer Demo",
-        url: "/Arduino/digital_thermometer.mp4",
+        url: "/personal-website/Arduino/digital_thermometer.mp4",
         caption: "Real-time temperature monitoring with LCD display"
       },
       {
         title: "7-Segment Display Test",
-        url: "/Arduino/seven segment display.mp4",
+        url: "/personal-website/Arduino/seven segment display.mp4",
         caption: "4-digit 7-segment display controlled via shift registers"
       },
       {
         title: "ESP32 Gaming System",
-        url: "/Arduino/esp_demo_vid.mp4",
+        url: "/personal-website/Arduino/esp_demo_vid.mp4",
         caption: "ESP32 gaming console running multiple classic games"
       }
     ],
 
     gallery: [
       {
-        src: "/Arduino/digital_thermometer.jpg",
+        src: "/personal-website/Arduino/digital_thermometer.jpg",
         caption: "Arduino-based digital thermometer with LCD"
       },
       {
-        src: "/Arduino/ESP_GAMES.JPG",
+        src: "/personal-website/Arduino/ESP_GAMES.JPG",
         caption: "ESP32 gaming console with OLED display"
       }
     ],

@@ -4,7 +4,7 @@ const GearBox = () => {
   const projectData = {
     title: "Gear Box",
     subtitle: "Mechanical Design Course Project",
-    heroImage: "/gear_box.jpg",
+    heroImage: "/personal-website/gear_box.jpg",
     description: "A team-based mechanical design lab project focused on creating a functional gearbox prototype using 3D-printed components. The project emphasized design feasibility, reliability, assembly efficiency, and material optimization rather than production performance.",
     
     techSpecs: [
@@ -43,23 +43,23 @@ const GearBox = () => {
 
     gallery: [
       {
-        src: "/gear_box.jpg",
+        src: "/personal-website/gear_box.jpg",
         caption: "3D-printed gearbox prototype assembled and tested with a hand drill"
       },
       {
-        src: "/gear-box/Gearbox Assembly Drawing.jpg",
+        src: "/personal-website/gear-box/Gearbox Assembly Drawing.jpg",
         caption: "Detailed assembly drawing showing component layout and dimensions"
       },
       {
-        src: "/gear-box/printed.jpg",
+        src: "/personal-website/gear-box/printed.jpg",
         caption: "Top view of printed components"
       },
       {
-        src: "/gear-box/Gearbox Instructions_page_1.jpg",
+        src: "/personal-website/gear-box/Gearbox Instructions_page_1.jpg",
         caption: "Page 1: Assembly instructions and technical specifications"
       },
       {
-        src: "/gear-box/Gearbox Instructions_page_2.jpg",
+        src: "/personal-website/gear-box/Gearbox Instructions_page_2.jpg",
         caption: "Page 2: Continued assembly instructions and technical details"
       }
     ],
@@ -68,8 +68,8 @@ const GearBox = () => {
       {
         title: "Gear Box CAD Model",
         description: "Interactive 3D model of the gearbox showing the gear train and open-frame casing design.",
-        src: "/gear-box/gear_box.glb",
-        poster: "/gear_box.jpg",
+        src: "/personal-website/gear-box/gear_box.glb",
+        poster: "/personal-website/gear_box.jpg",
         autoRotate: false,
         interactionPrompt: "none",
         autoPlay: false,

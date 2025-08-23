@@ -13,7 +13,7 @@ const RoboticHand = () => {
   const projectData = {
     title: "Robotic Hand",
     subtitle: "Bionic Prosthetic & Robotics Project",
-    heroImage: "/robotic_hand/Full Working setup.JPG",
+    heroImage: "/personal-website/robotic_hand/Full Working setup.JPG",
     description:
       "A bionic robotic hand designed as a functional prosthetic prototype. This project integrates CAD-based mechanical design, embedded electronics, and AI-driven gesture recognition to achieve intuitive and natural control.",
     
@@ -69,39 +69,39 @@ const RoboticHand = () => {
 
     gallery: [
       {
-        src: "/robotic_hand(2).jpg",
+        src: "/personal-website/robotic_hand(2).jpg",
         caption: "Robotic hand assembly"
       },
       {
-        src: "/robotic_hand/AAbattery_holders.JPG",
+        src: "/personal-website/robotic_hand/AAbattery_holders.JPG",
         caption: "AA Battery holders for dual 5V power supply for EMG sensor"
       },
       {
-        src: "/robotic_hand/EMG_sensor.JPG",
+        src: "/personal-website/robotic_hand/EMG_sensor.JPG",
         caption: "Surface EMG sensor used for muscle signal acquisition"
       },
       {
-        src: "/robotic_hand/PCA9685_ServoSheild.jpg",
+        src: "/personal-website/robotic_hand/PCA9685_ServoSheild.jpg",
         caption: "PCA9685 servo driver shield"
       },
       {
-        src: "/robotic_hand/UnoR3_Clone.jpg",
+        src: "/personal-website/robotic_hand/UnoR3_Clone.jpg",
         caption: "Arduino Uno R3"
       },
       {
-        src: "/robotic_hand/ESP32 S3 Microcontroller.jpg",
+        src: "/personal-website/robotic_hand/ESP32 S3 Microcontroller.jpg",
         caption: "ESP32-S3 microcontroller with PSRAM for AI inference"
       },
       {
-        src: "/robotic_hand/Threading fingers and pulleys.JPG",
+        src: "/personal-website/robotic_hand/Threading fingers and pulleys.JPG",
         caption: "Threading fingers and pulleys with rope and elasstic cords"
       },
       {
-        src: "/robotic_hand/Curing with UV Light Printed Parts.JPG",
+        src: "/personal-website/robotic_hand/Curing with UV Light Printed Parts.JPG",
         caption: "3D printed parts being cured with UV light for strength"
       },
       {
-        src: "/robotic_hand/woodstand_drawing.jpg",
+        src: "/personal-website/robotic_hand/woodstand_drawing.jpg",
         caption: "Custom wooden stand drawing"
       }
     ],
@@ -109,31 +109,31 @@ const RoboticHand = () => {
     videos: [
       {
         title: "Initial Prototype",
-        url: "/robotic_hand/initial prototype.mov",
+        url: "/personal-website/robotic_hand/initial prototype.mov",
         caption: "Early prototype testing and development",
         type: "video"
       },
       {
         title: "Single Finger Prototype",
-        url: "/robotic_hand/single finger prototype.MOV",
+        url: "/personal-website/robotic_hand/single finger prototype.MOV",
         caption: "Testing individual finger mechanism and actuation",
         type: "video"
       },
       {
         title: "IR Control",
-        url: "/IR/IR-remote-control.MOV",
+        url: "/personal-website/IR/IR-remote-control.MOV",
         caption: "Demonstration of robotic hand assembly and initial testing",
         type: "video"
       },
       {
         title: "Live Hand Tracking",
-        url: "/compv/computervision-handtracking.mp4",
+        url: "/personal-website/compv/computervision-handtracking.mp4",
         caption: "Real-time hand tracking using computer vision (Mediapipe)",
         type: "video"
       },
       {
         title: "EMG Inference on Laptop",
-        url: "/robotic_hand/EMG-infrence-on-laptop.mov",
+        url: "/personal-website/robotic_hand/EMG-infrence-on-laptop.mov",
         caption: "Real-time EMG signal processing and inference on laptop for robotic hand control",
         type: "video"
       }
@@ -143,8 +143,8 @@ const RoboticHand = () => {
       {
         title: "Robotic Hand Assembly",
         description: "Interactive 3D model of the complete robotic hand assembly with detailed finger mechanisms and servo components.",
-        src: "/robotic_hand/hand-part.glb",
-        poster: "/robotic_hand/robotic_hand.JPG",
+        src: "/personal-website/robotic_hand/hand-part.glb",
+        poster: "/personal-website/robotic_hand/robotic_hand.JPG",
         autoRotate: true,
         interactionPrompt: "auto",
         autoPlay: false,
@@ -165,8 +165,8 @@ const RoboticHand = () => {
     ],
 
     nextProject: {
-      title: "Steering Assembly",
-      slug: "steering-assembly"
+      title: "Skin Cancer Classification",
+      slug: "skin-cancer-classification"
     },
     
     prevProject: {
@@ -369,11 +369,11 @@ const RoboticHand = () => {
             <div className="flex justify-center">
               <div className="bg-gray-900 rounded-xl overflow-hidden mx-auto" style={{ maxWidth: '800px', aspectRatio: '16/9', minHeight: '450px' }}>
                 <video
-                  src="/final-hand-demo.mov"
+                  src="/personal-website/final-hand-demo.mov"
                   className="w-full h-full object-contain"
                   controls
                   preload="metadata"
-                  poster="/robotic_hand/robotic_hand.JPG"
+                  poster="/personal-website/robotic_hand/robotic_hand.JPG"
                   style={{ minHeight: '450px' }}
                 />
               </div>

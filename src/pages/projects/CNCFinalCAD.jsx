@@ -5,7 +5,7 @@ const CNCFinalCAD = () => {
   const projectData = {
     title: "CNC Final CAD",
     subtitle: "3-Axis Desktop CNC Router for Beginner Hobbyists",
-    heroImage: "/CNC_Final_CAD.png",
+    heroImage: "/personal-website/CNC_Final_CAD.png",
     description:
       "A compact 3-axis CNC router designed for garage/workshop use. The final architecture uses a timing belt on X for long travel, dual lead screws on Y for stiffness, and a lead screw with twin guide rails on Z for accuracy (travels: X 900 mm, Y 600 mm, Z 70 mm). Stepper motors (1.8°) drive all axes, and an emergency stop provides a controlled stop then power cut. SolidWorks mass properties report ~74.37 kg and the design meets key specs including ≥12,000 RPM spindle capability and a 100 IPM feed-rate target.",
 
@@ -70,19 +70,19 @@ const CNCFinalCAD = () => {
 
     gallery: [
       {
-        src: "/CNC_Final_CAD.png",
+        src: "/personal-website/CNC_Final_CAD.png",
         caption: "Final CAD model of the 3-axis router"
       },
       {
-        src: "/CNC/Exploded-ASSM.png",
+        src: "/personal-website/CNC/Exploded-ASSM.png",
         caption: "Exploded assembly view"
       },
       {
-        src: "/CNC/spindle-exploded.png",
+        src: "/personal-website/CNC/spindle-exploded.png",
         caption: "Spindle sub-assembly exploded"
       },
       {
-        src: "/CNC/orthg-view.png",
+        src: "/personal-website/CNC/orthg-view.png",
         caption: "Orthographic view of the final model"
       }
     ],
@@ -92,8 +92,8 @@ const CNCFinalCAD = () => {
         title: "3D CAD Model",
         description:
           "Interactive SolidWorks assembly export (GLB). Optimized for browser performance; reduced rendering quality and auto-rotation disabled.",
-        src: "/CNC/cnc(2).glb",
-        poster: "/CNC_Final_CAD.png",
+        src: "/personal-website/CNC/cnc(2).glb",
+        poster: "/personal-website/CNC_Final_CAD.png",
         autoRotate: false,
         interactionPrompt: "none",
         autoPlay: false,
@@ -138,10 +138,10 @@ const CNCFinalCAD = () => {
         
         <ImageCarousel 
           images={[
-            { src: "/CNC/belt-drive.PNG", caption: "Belt drive mechanism design" },
-            { src: "/CNC/guide-rails.png", caption: "Guide rails and linear motion system" },
-            { src: "/CNC/moving-workspace.png", caption: "Moving workspace assembly" },
-            { src: "/CNC/stable-frame.png", caption: "Stable frame structure" }
+            { src: "/personal-website/CNC/belt-drive.PNG", caption: "Belt drive mechanism design" },
+            { src: "/personal-website/CNC/guide-rails.png", caption: "Guide rails and linear motion system" },
+            { src: "/personal-website/CNC/moving-workspace.png", caption: "Moving workspace assembly" },
+            { src: "/personal-website/CNC/stable-frame.png", caption: "Stable frame structure" }
           ]}
           baseWidth={500}
           autoplay={true}

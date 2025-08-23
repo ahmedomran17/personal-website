@@ -11,49 +11,49 @@ import { useTheme } from "../contexts/ThemeContext";
 const PROJECTS = [
   {
     id: "1",
-    img: "/CNC_Final_CAD.png",
+    img: "/personal-website/CNC_Final_CAD.png",
     url: "/projects/cnc-final-cad",
     title: "CNC Machine Design"
   },
   {
     id: "2",
-    img: "/crosswalk_model.png",
+    img: "/personal-website/crosswalk_model.png",
     url: "/projects/crosswalk-model",
     title: "Walkable Cities"
   },
   {
     id: "3",
-    img: "/Arduino/digital_thermometer.jpg",
+    img: "/personal-website/Arduino/digital_thermometer.jpg",
     url: "/projects/embedded-systems",
     title: "Intro to Embedded Systems"
   },
   {
     id: "4",
-    img: "/gear_box.jpg",
+    img: "/personal-website/gear_box.jpg",
     url: "/projects/gear-box",
     title: "Gear Box"
   },
   {
     id: "5",
-    img: "/piston(2).png",
+    img: "/personal-website/piston(2).png",
     url: "/projects/piston",
     title: "Piston Assembly"
   },
   {
     id: "6",
-    img: "/robotic_hand/Full Working setup.JPG",
+    img: "/personal-website/robotic_hand/Full Working setup.JPG",
     url: "/projects/robotic-hand",
     title: "Robotic Hand"
   },
   {
     id: "7",
-    img: "/steering_assm.PNG",
+    img: "/personal-website/steering_assm.PNG",
     url: "/projects/steering-assembly",
     title: "Steering Assembly"
   },
   {
     id: "8",
-    img: "/skin-classifier-images/Primary model Architecture.jpg",
+    img: "/personal-website/skin-classifier-images/Primary model Architecture.jpg",
     url: "/projects/skin-cancer-classification",
     title: "Skin Cancer Classification"
   }

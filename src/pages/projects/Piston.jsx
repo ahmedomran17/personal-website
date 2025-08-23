@@ -4,7 +4,7 @@ const Piston = () => {
   const projectData = {
     title: "Piston Assembly",
     subtitle: "Machining Fundamentals Project",
-    heroImage: "/piston.JPG",
+    heroImage: "/personal-website/piston.JPG",
     description:
       "As part of a machining course at George Brown College, I manufactured a piston, cylinder, and flywheel assembly using traditional machining techniques. The moving components were machined from aluminum, while the supporting stand was fabricated from steel. This project emphasized precision, accuracy, and foundational skills in manual machining and assembly.",
 
@@ -42,7 +42,7 @@ const Piston = () => {
 
     gallery: [
       {
-        src: "/piston.JPG",
+        src: "/personal-website/piston.JPG",
         caption: "Machined piston, cylinder, and flywheel assembly on steel stand"
       }
     ],

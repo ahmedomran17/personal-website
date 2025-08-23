@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DotGrid from '../components/DotGrid';
 import DecryptedText from '../components/DecryptedText';
 import RollingGallery from '../components/RollingGallery';
@@ -56,7 +57,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="w-96 h-96 rounded-lg overflow-hidden">
               <img 
-                src="/public/homepage_photo(1).jpg" 
+                src="/personal-website/public/homepage_photo(1).jpg" 
                 alt="Ahmed Omran" 
                 className="w-full h-full object-cover"
               />
@@ -75,12 +76,12 @@ export default function Home() {
         </p>
         <RollingGallery />
         <div className="mt-6">
-          <a 
-            href="/projects" 
+          <Link 
+            to="/projects" 
             className="inline-block bg-black dark:bg-white text-white dark:text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-200"
           >
             View Projects
-          </a>
+          </Link>
         </div>
       </div>
 

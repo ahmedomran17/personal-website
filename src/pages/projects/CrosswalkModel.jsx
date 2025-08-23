@@ -5,7 +5,7 @@ const CrosswalkModel = () => {
   const projectData = {
     title: "Crosswalk Model",
     subtitle: "Elevated Crosswalk Design for Safety & Accessibility",
-    heroImage: "/crosswalk_model.png",
+    heroImage: "/personal-website/crosswalk_model.png",
     description: 
       "This project redesigned the Bahen-Galbraith crosswalk at the University of Toronto to improve safety, " +
       "accessibility, and pedestrian flow. Research highlighted issues with jaywalking, winter conditions, " +
@@ -61,30 +61,30 @@ const CrosswalkModel = () => {
 
     gallery: [
       {
-        src: "/crosswalk_model.png",
+        src: "/personal-website/crosswalk_model.png",
         caption: "Proposed elevated crosswalk model"
       },
       {
-        src: "/crosswalk/crosswalk map.jpg",
+        src: "/personal-website/crosswalk/crosswalk map.jpg",
         caption: "Crosswalk location map"
       },
       {
-        src: "/crosswalk/crosswalk.jpg",
+        src: "/personal-website/crosswalk/crosswalk.jpg",
         caption: "Current crosswalk condition"
       },
       {
-        src: "/crosswalk/unnamed (1).png",
+        src: "/personal-website/crosswalk/alt1.jpg",
         caption: "Proposed Design concept"
       },
       {
-        src: "/crosswalk/unnamed (2).png",
+        src: "/personal-website/crosswalk/alt2.jpg",
         caption: "Proposed Design concept"
       }
     ],
 
     videos: [
       {
-        url: "/crosswalk/traffic_sim.mp4",
+        url: "/personal-website/crosswalk/traffic_sim.mp4",
         title: "Traffic Simulation",
         caption: "Traffic simulation demonstrating pedestrian flow improvements"
       }
@@ -94,8 +94,8 @@ const CrosswalkModel = () => {
       {
         title: "Crosswalk Design Model",
         description: "3D model of the proposed elevated crosswalk design with tactile surfaces and accessibility features.",
-        src: "/crosswalk/crosswalk-part(4).glb",
-        poster: "/crosswalk_model.png"
+        src: "/personal-website/crosswalk/crosswalk-part(4).glb",
+        poster: "/personal-website/crosswalk_model.png"
       }
     ],
 
@@ -126,15 +126,15 @@ const CrosswalkModel = () => {
           <ImageCarousel
             images={[
               {
-                src: "/crosswalk/alt1.jpg",
+                src: "/personal-website/crosswalk/alt1.jpg",
                 caption: "Interactive Crosswalk with energy generating tiles"
               },
               {
-                src: "/crosswalk/alt2.jpg",
+                src: "/personal-website/crosswalk/alt2.jpg",
                 caption: "Wider crosswalk with two lanes"
               },
               {
-                src: "/crosswalk/alt3.png",
+                src: "/personal-website/crosswalk/alt3.png",
                 caption: "Raised crosswalk and sensor bollards"
               }
             ]}
