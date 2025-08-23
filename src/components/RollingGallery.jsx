@@ -12,8 +12,8 @@ const PROJECTS = [
   {
     id: "1",
     img: "/personal-website/CNC_Final_CAD.png",
-    url: "/projects/cnc-final-cad",
-    title: "CNC Machine Design"
+    url: "/projects/cnc-cad",
+            title: "CNC Router CAD"
   },
   {
     id: "2",

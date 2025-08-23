@@ -73,11 +73,11 @@ const CrosswalkModel = () => {
         caption: "Current crosswalk condition"
       },
       {
-        src: "/personal-website/crosswalk/alt1.jpg",
+        src: "/personal-website/crosswalk/concept1.png",
         caption: "Proposed Design concept"
       },
       {
-        src: "/personal-website/crosswalk/alt2.jpg",
+        src: "/personal-website/crosswalk/concept2.png",
         caption: "Proposed Design concept"
       }
     ],
@@ -112,8 +112,8 @@ const CrosswalkModel = () => {
     },
     
     prevProject: {
-      title: "CNC Final CAD",
-      slug: "cnc-final-cad"
+      title: "CNC Router CAD",
+      slug: "cnc-cad"
     }
   };
 

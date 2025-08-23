@@ -57,7 +57,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="w-96 h-96 rounded-lg overflow-hidden">
               <img 
-                src="/personal-website/public/homepage_photo(1).jpg" 
+                src="/personal-website/homepage_photo(1).JPG" 
                 alt="Ahmed Omran" 
                 className="w-full h-full object-cover"
               />

@@ -6,9 +6,9 @@ const items = [
     {
       id: "1",
       img: "/personal-website/CNC_Final_CAD.png",
-      url: "/projects/cnc-final-cad",
+      url: "/projects/cnc-cad",
       height: 420,
-      title: "CNC Machine Design",
+                title: "CNC Router CAD",
       description: "Designing a beginner friendly CNC machine to fit various constraints"
     },
     {

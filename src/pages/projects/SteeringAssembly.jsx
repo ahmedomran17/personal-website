@@ -85,8 +85,8 @@ const SteeringAssembly = () => {
     ],
 
     nextProject: {
-      title: "CNC Final CAD",
-      slug: "cnc-final-cad"
+      title: "CNC Router CAD",
+      slug: "cnc-cad"
     },
 
     prevProject: {

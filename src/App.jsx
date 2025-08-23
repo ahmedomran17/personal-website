@@ -8,7 +8,7 @@ import Projects from './pages/Projects';
 
 
 // Project Detail Pages
-import CNCFinalCAD from './pages/projects/CNCFinalCAD';
+import CNC_CAD from './pages/projects/CNC_CAD';
 import CrosswalkModel from './pages/projects/CrosswalkModel';
 import EmbeddedSystems from './pages/projects/EmbeddedSystems';
 
@@ -32,7 +32,7 @@ function App() {
 
             
             {/* Project Detail Routes */}
-            <Route path="/projects/cnc-final-cad" element={<CNCFinalCAD />} />
+            <Route path="/projects/cnc-cad" element={<CNC_CAD />} />
             <Route path="/projects/crosswalk-model" element={<CrosswalkModel />} />
             <Route path="/projects/embedded-systems" element={<EmbeddedSystems />} />
 

@@ -1,13 +1,13 @@
 import ProjectDetailTemplate from '../../components/ProjectDetailTemplate';
 import ImageCarousel from '../../components/ImageCarousel';
 
-const CNCFinalCAD = () => {
+const CNC_CAD = () => {
   const projectData = {
-    title: "CNC Final CAD",
+    title: "CNC Router CAD",
     subtitle: "3-Axis Desktop CNC Router for Beginner Hobbyists",
     heroImage: "/personal-website/CNC_Final_CAD.png",
     description:
-      "A compact 3-axis CNC router designed for garage/workshop use. The final architecture uses a timing belt on X for long travel, dual lead screws on Y for stiffness, and a lead screw with twin guide rails on Z for accuracy (travels: X 900 mm, Y 600 mm, Z 70 mm). Stepper motors (1.8°) drive all axes, and an emergency stop provides a controlled stop then power cut. SolidWorks mass properties report ~74.37 kg and the design meets key specs including ≥12,000 RPM spindle capability and a 100 IPM feed-rate target.",
+      "A compact 3-axis CNC router designed for beginner and hobbyist use. The final architecture uses a timing belt on X for long travel, dual lead screws on Y for stiffness, and a lead screw with twin guide rails on Z for accuracy (travels: X 900 mm, Y 600 mm, Z 70 mm). Stepper motors (1.8°) drive all axes, and an emergency stop provides a controlled stop then power cut. SolidWorks mass properties report ~74.37 kg and the design meets key specs including ≥12,000 RPM spindle capability and a 100 IPM feed-rate target.",
 
     techSpecs: [
       {
@@ -130,10 +130,6 @@ const CNCFinalCAD = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Alternative Design Concepts
           </h2>
-          {//<p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            //Explore the detailed CAD designs and manufacturing process through interactive images showcasing the CNC project components.
-          //</p> 
-          }
         </div>
         
         <ImageCarousel 
@@ -163,4 +159,4 @@ const CNCFinalCAD = () => {
   );
 };
 
-export default CNCFinalCAD;
+export default CNC_CAD;
