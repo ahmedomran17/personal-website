@@ -79,6 +79,15 @@ const GearBox = () => {
       }
     ],
 
+    videos: [
+      {
+        title: "Gearbox Assembly Testing",
+        caption: "Testing printed prototype with a hand drill.",
+        url: "/personal-website/gear-box/gear-box-test.mp4",
+        type: "video/mp4"
+      }
+    ],
+
     outcomes: [
       "Successfully demonstrated a working gearbox prototype",
       "Achieved reliable operation under hand-drill testing",

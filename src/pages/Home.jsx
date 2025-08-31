@@ -49,7 +49,7 @@ export default function Home() {
               Mechanical Engineering @ University of Toronto
             </h3>
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed transition-colors duration-200">
-              Mechanical engineering student specializing in mechatronics and bioengineering, with a minor in engineering business and robotics. Skilled in programming and mechanical design, passionate about robotics, biomedical innovation, and creating solutions that make a real-world impact.
+              Mechanical engineering student specializing in mechatronics and bioengineering, with minors in engineering business and robotics. Skilled in programming and mechanical design, passionate about robotics, biomedical innovation, and creating solutions that make a real-world impact.
             </p>
           </div>
           
