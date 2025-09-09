@@ -73,6 +73,9 @@ import {
     colorShiftOnHover = true,
   }) => {
     const navigate = useNavigate();
+    const [isMobile, setIsMobile] = useState(false);
+    const [touchedItem, setTouchedItem] = useState(null);
+    
     const columns = useMedia(
       [
         "(min-width:1500px)",
@@ -86,6 +89,16 @@ import {
   
     const [containerRef, { width }] = useMeasure();
     const [imagesReady, setImagesReady] = useState(false);
+
+    // Mobile detection
+    useEffect(() => {
+      const checkIsMobile = () => {
+        setIsMobile(window.innerWidth < 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+      };
+      checkIsMobile();
+      window.addEventListener('resize', checkIsMobile);
+      return () => window.removeEventListener('resize', checkIsMobile);
+    }, []);
   
     const getInitialPosition = (item) => {
       const containerRect = containerRef.current?.getBoundingClientRect();
@@ -215,6 +228,33 @@ import {
       if (darkOverlay) gsap.to(darkOverlay, { opacity: 0, duration: 0.15 });
       if (textOverlay) gsap.to(textOverlay, { opacity: 0, y: 20, duration: 0.15, ease: "power2.out" });
     };
+
+    // Touch handlers for mobile
+    const handleTouchStart = (id, element) => {
+      if (isMobile) {
+        setTouchedItem(id);
+        handleMouseEnter(id, element);
+      }
+    };
+
+    const handleTouchEnd = (id, element) => {
+      if (isMobile) {
+        // Delay hiding to allow for tap navigation
+        setTimeout(() => {
+          if (touchedItem === id) {
+            setTouchedItem(null);
+            handleMouseLeave(id, element);
+          }
+        }, 100);
+      }
+    };
+
+    const handleTouchCancel = (id, element) => {
+      if (isMobile) {
+        setTouchedItem(null);
+        handleMouseLeave(id, element);
+      }
+    };
   
     return (
       <div ref={containerRef} className="relative w-full h-full">
@@ -222,11 +262,14 @@ import {
           <div
             key={item.id}
             data-key={item.id}
-            className="absolute box-content"
+            className="absolute box-content masonry-item"
             style={{ willChange: "transform, width, height, opacity" }}
             onClick={() => navigate(item.url)}
-            onMouseEnter={(e) => handleMouseEnter(item.id, e.currentTarget)}
-            onMouseLeave={(e) => handleMouseLeave(item.id, e.currentTarget)}
+            onMouseEnter={(e) => !isMobile && handleMouseEnter(item.id, e.currentTarget)}
+            onMouseLeave={(e) => !isMobile && handleMouseLeave(item.id, e.currentTarget)}
+            onTouchStart={(e) => handleTouchStart(item.id, e.currentTarget)}
+            onTouchEnd={(e) => handleTouchEnd(item.id, e.currentTarget)}
+            onTouchCancel={(e) => handleTouchCancel(item.id, e.currentTarget)}
           >
             <div
               className="relative w-full h-full rounded-[10px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] overflow-hidden"
@@ -254,6 +297,11 @@ import {
                 <p className="text-white/90 text-sm text-center leading-relaxed">
                   {item.description}
                 </p>
+                {isMobile && (
+                  <div className="mt-3 text-white/70 text-xs">
+                    Tap to view project
+                  </div>
+                )}
               </div>
             </div>
           </div>

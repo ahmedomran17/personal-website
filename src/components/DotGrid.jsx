@@ -91,8 +91,9 @@ const DotGrid = ({
     const extraX = width - gridW;
     const extraY = height - gridH;
 
-    const startX = extraX / 2 + dotSize / 2;
-    const startY = extraY / 2 + dotSize / 2;
+    // Center the grid properly, ensuring it's centered both horizontally and vertically
+    const startX = Math.max(0, extraX / 2) + dotSize / 2;
+    const startY = Math.max(0, extraY / 2) + dotSize / 2;
 
     const dots = [];
     for (let y = 0; y < rows; y++) {

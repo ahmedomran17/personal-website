@@ -1,6 +1,23 @@
 import { useEffect, useRef, useState } from 'react';
 import '@google/model-viewer';
 
+// Custom hook for mobile detection
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+    };
+
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
+
+  return isMobile;
+};
+
 const ModelViewer = ({
   src,
   alt = "A 3D model",
@@ -31,6 +48,7 @@ const ModelViewer = ({
   const [availableAnimations, setAvailableAnimations] = useState([]);
   const [currentAnimation, setCurrentAnimation] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
+  const isMobile = useIsMobile();
 
   // Intersection Observer for lazy loading
   useEffect(() => {
@@ -93,11 +111,15 @@ const ModelViewer = ({
     }
   }, [onLoad, onError]);
 
+  // Mobile-optimized styling
   const defaultStyle = {
     width: '100%',
-    height: '400px',
+    height: '100%',
+    maxWidth: '100%',
+    maxHeight: '100%',
     backgroundColor: '#4a4a4a',
-    borderRadius: '12px',
+    borderRadius: isMobile ? '8px' : '12px',
+    overflow: 'hidden',
     ...style
   };
 
@@ -114,8 +136,8 @@ const ModelViewer = ({
       className={className}
       style={defaultStyle}
       // Lighting and material settings - enhanced color vibrancy and contrast
-      shadow-intensity="0.4"
-      exposure="0.75"
+      shadow-intensity={isMobile ? "0.3" : "0.4"}
+      exposure={isMobile ? "0.8" : "0.75"}
       tone-mapping="neutral"
       environment-image="neutral"
       skybox-image=""
@@ -123,23 +145,23 @@ const ModelViewer = ({
       // Additional lighting controls for better visibility
       min-camera-orbit="auto auto auto"
       max-camera-orbit="auto auto auto"
-      camera-orbit="0deg 75deg 105%"
-      field-of-view="30deg"
+      camera-orbit={isMobile ? "0deg 60deg 120%" : "0deg 75deg 105%"}
+      field-of-view={isMobile ? "35deg" : "30deg"}
       // Enhanced lighting for better material definition
-      light-intensity="1.0"
-      ambient-light-intensity="0.6"
-      shadow-softness="0.7"
+      light-intensity={isMobile ? "1.2" : "1.0"}
+      ambient-light-intensity={isMobile ? "0.8" : "0.6"}
+      shadow-softness={isMobile ? "0.5" : "0.7"}
       // Material enhancement settings
       material-variant=""
       variant-name=""
-      interaction-prompt={interactionPrompt}
+      interaction-prompt={isMobile ? "auto" : interactionPrompt}
       auto-play={autoPlay}
       max-camera-orbit={maxCameraOrbit}
       min-camera-orbit={minCameraOrbit}
-      disable-zoom={disableZoom}
-      // Quality and performance settings
-      render-scale="0.8"
-      max-hotspots="3"
+      disable-zoom={isMobile ? true : disableZoom}
+      // Quality and performance settings - optimized for mobile
+      render-scale={isMobile ? "0.6" : "0.8"}
+      max-hotspots={isMobile ? "2" : "3"}
       quick-look-browsers="safari chrome"
       // Animation settings
       animation-name={enableAnimations ? (animationName || currentAnimation) : ""}
@@ -159,11 +181,11 @@ const ModelViewer = ({
         </div>
       </div>
       
-      {/* Animation Controls */}
+      {/* Animation Controls - Mobile optimized */}
       {showAnimationControls && availableAnimations.length > 0 && (
-        <div slot="hotspot-1" className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg">
-          <div className="text-sm font-semibold mb-2">Animations</div>
-          <div className="space-y-2">
+        <div slot="hotspot-1" className={`absolute ${isMobile ? 'bottom-2 left-2 right-2' : 'bottom-4 left-4'} bg-white/90 backdrop-blur-sm rounded-lg ${isMobile ? 'p-2' : 'p-3'} shadow-lg`}>
+          <div className={`${isMobile ? 'text-xs' : 'text-sm'} font-semibold mb-2`}>Animations</div>
+          <div className={`space-y-1 ${isMobile ? 'grid grid-cols-2 gap-1' : 'space-y-2'}`}>
             {availableAnimations.map((animName) => (
               <button
                 key={animName}
@@ -176,13 +198,13 @@ const ModelViewer = ({
                     setIsPlaying(true);
                   }
                 }}
-                className={`block w-full text-left px-3 py-1 rounded text-sm transition-colors ${
+                className={`block w-full text-left ${isMobile ? 'px-2 py-1 text-xs' : 'px-3 py-1 text-sm'} rounded transition-colors ${
                   currentAnimation === animName 
                     ? 'bg-blue-500 text-white' 
                     : 'bg-gray-100 hover:bg-gray-200'
                 }`}
               >
-                {animName}
+                {isMobile ? animName.substring(0, 8) + '...' : animName}
               </button>
             ))}
             <button
@@ -198,7 +220,7 @@ const ModelViewer = ({
                   }
                 }
               }}
-              className="block w-full text-left px-3 py-1 rounded text-sm bg-gray-100 hover:bg-gray-200"
+              className={`block w-full text-left ${isMobile ? 'px-2 py-1 text-xs' : 'px-3 py-1 text-sm'} rounded bg-gray-100 hover:bg-gray-200 ${isMobile ? 'col-span-2' : ''}`}
             >
               {isPlaying ? '⏸️ Pause' : '▶️ Play'}
             </button>

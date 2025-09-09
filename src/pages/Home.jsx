@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="bg-white dark:bg-black min-h-screen transition-colors duration-200">
       {/* DotGrid Background */}
-      <div style={{ width: '100%', height: '600px', position: 'relative', backgroundColor: 'var(--bg-color)' }} className="bg-white dark:bg-black">
+      <div style={{ width: '100%', height: '600px', position: 'relative', backgroundColor: 'var(--bg-color)' }} className="bg-white dark:bg-black dot-grid-container">
         <DotGrid 
           dotSize={5} 
           gap={15} 

@@ -67,3 +67,77 @@ model-viewer:not([loaded]) .progress-bar {
 model-viewer[loaded] .progress-bar {
   display: none;
 }
+
+/* Mobile-specific Model Viewer optimizations */
+@media (max-width: 768px) {
+  model-viewer {
+    touch-action: pan-x pan-y;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+  }
+  
+  model-viewer .progress-bar {
+    width: 50%;
+    height: 8%;
+    max-height: 1.5%;
+  }
+  
+  /* Improve touch interactions */
+  model-viewer::part(default-progress-bar) {
+    height: 4px;
+  }
+  
+  /* Better mobile hotspot positioning */
+  model-viewer [slot="hotspot-1"] {
+    max-width: calc(100vw - 32px);
+    left: 16px !important;
+    right: 16px !important;
+  }
+  
+  /* Mobile-specific container constraints */
+  .model-viewer-container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: clamp(250px, 50vw, 350px) !important;
+    max-height: clamp(250px, 50vw, 350px) !important;
+  }
+  
+  /* Additional mobile constraints */
+  .model-viewer-container * {
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+  
+  /* Prevent any element from causing horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Fix DotGrid positioning on mobile */
+  .dot-grid-container {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Improve mobile touch interactions for project cards */
+  .masonry-item {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  .masonry-item:active {
+    transform: scale(0.98);
+  }
+}

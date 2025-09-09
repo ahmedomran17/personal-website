@@ -192,7 +192,10 @@ const ProjectDetailTemplate = ({
                       : 'bg-white'
                   }`}>
                     <h3 className={`text-xl font-semibold mb-4 text-center ${isDark ? 'text-white' : 'text-black'}`}>{model.title}</h3>
-                    <div className={`aspect-video rounded-lg mb-4 ${isDark ? 'bg-gray-800' : 'bg-gray-100'}`} style={{ minHeight: '350px' }}>
+                    <div className={`model-viewer-container rounded-lg mb-4 ${isDark ? 'bg-gray-800' : 'bg-gray-100'} overflow-hidden`} style={{ 
+                      minHeight: '350px',
+                      aspectRatio: '16/9'
+                    }}>
                       {model.src ? (
                         <ModelViewer
                           src={model.src}
@@ -201,7 +204,12 @@ const ProjectDetailTemplate = ({
                           autoRotate={model.autoRotate !== false}
                           cameraControls={model.cameraControls !== false}
                           className="w-full h-full rounded-lg"
-                          style={{ height: '100%', minHeight: '350px' }}
+                          style={{ 
+                            height: '100%', 
+                            width: '100%',
+                            minHeight: '350px',
+                            objectFit: 'contain'
+                          }}
                         />
                       ) : model.embedUrl ? (
                         <iframe
