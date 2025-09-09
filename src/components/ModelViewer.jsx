@@ -93,6 +93,30 @@ const ModelViewer = ({
           console.log('Available animations:', modelViewer.availableAnimations);
         }
         
+        // Mobile-specific enhancements
+        if (isMobile) {
+          // Enable better touch interactions
+          modelViewer.style.touchAction = 'manipulation';
+          modelViewer.style.cursor = 'grab';
+          
+          // Add touch event listeners for better mobile experience
+          const handleTouchStart = () => {
+            modelViewer.style.cursor = 'grabbing';
+          };
+          
+          const handleTouchEnd = () => {
+            modelViewer.style.cursor = 'grab';
+          };
+          
+          modelViewer.addEventListener('touchstart', handleTouchStart);
+          modelViewer.addEventListener('touchend', handleTouchEnd);
+          
+          return () => {
+            modelViewer.removeEventListener('touchstart', handleTouchStart);
+            modelViewer.removeEventListener('touchend', handleTouchEnd);
+          };
+        }
+        
         if (onLoad) onLoad(event);
       };
 
@@ -109,7 +133,7 @@ const ModelViewer = ({
         modelViewer.removeEventListener('error', handleError);
       };
     }
-  }, [onLoad, onError]);
+  }, [onLoad, onError, isMobile]);
 
   // Mobile-optimized styling
   const defaultStyle = {
@@ -143,8 +167,8 @@ const ModelViewer = ({
       skybox-image=""
       seamless-poster=""
       // Additional lighting controls for better visibility
-      min-camera-orbit="auto auto auto"
-      max-camera-orbit="auto auto auto"
+      min-camera-orbit={isMobile ? "auto 0deg auto" : "auto auto auto"}
+      max-camera-orbit={isMobile ? "auto 180deg auto" : "auto auto auto"}
       camera-orbit={isMobile ? "0deg 60deg 120%" : "0deg 75deg 105%"}
       field-of-view={isMobile ? "35deg" : "30deg"}
       // Enhanced lighting for better material definition
@@ -158,11 +182,14 @@ const ModelViewer = ({
       auto-play={autoPlay}
       max-camera-orbit={maxCameraOrbit}
       min-camera-orbit={minCameraOrbit}
-      disable-zoom={isMobile ? true : disableZoom}
+      disable-zoom={false}
       // Quality and performance settings - optimized for mobile
       render-scale={isMobile ? "0.6" : "0.8"}
       max-hotspots={isMobile ? "2" : "3"}
       quick-look-browsers="safari chrome"
+      // Mobile-specific touch settings
+      touch-action={isMobile ? "manipulation" : "auto"}
+      camera-controls={cameraControls}
       // Animation settings
       animation-name={enableAnimations ? (animationName || currentAnimation) : ""}
       variant-name=""
