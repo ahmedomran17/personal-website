@@ -5,6 +5,14 @@ import { useTheme } from '../contexts/ThemeContext';
 const items = [
     {
       id: "1",
+      img: "/personal-website/robotic_hand/Full Working setup.JPG",
+      url: "/projects/robotic-hand",
+      height: 680,
+      title: "Robotic Hand",
+      description: "Robotic hand with Computer Vision and EMG control"
+    },
+    {
+      id: "2",
       img: "/personal-website/CNC_Final_CAD.png",
       url: "/projects/cnc-cad",
       height: 420,
@@ -12,7 +20,7 @@ const items = [
       description: "Designing a beginner friendly CNC machine to fit various constraints"
     },
     {
-      id: "2",
+      id: "3",
       img: "/personal-website/crosswalk_model.png",
       url: "/projects/crosswalk-model",
       height: 320,
@@ -20,7 +28,7 @@ const items = [
       description: "Redesigning UofT Crosswalk for safety and accessibility"
     },
     {
-      id: "3",
+      id: "4",
       img: "/personal-website/Arduino/digital_thermometer.jpg",
       url: "/projects/embedded-systems",
       height: 600,
@@ -28,7 +36,7 @@ const items = [
       description: "Comprehensive Arduino starter kit projects and ESP32 gaming console development"
     },
     {
-      id: "4",
+      id: "5",
       img: "/personal-website/gear_box.jpg",
       url: "/projects/gear-box",
       height: 450,
@@ -36,20 +44,12 @@ const items = [
       description: "Mechanical transmission system design & analysis"
     },
     {
-      id: "5",
+      id: "6",
       img: "/personal-website/piston.JPG",
       url: "/projects/piston",
       height: 720,
       title: "Piston Assembly",
       description: "Machining and assembly of a piston and flywheel"
-    },
-    {
-      id: "6",
-      img: "/personal-website/robotic_hand/Full Working setup.JPG",
-      url: "/projects/robotic-hand",
-      height: 680,
-      title: "Robotic Hand",
-      description: "Robotic hand with Computer Vision and EMG control"
     },
     {
       id: "7",

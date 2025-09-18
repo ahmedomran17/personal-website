@@ -11,39 +11,39 @@ import { useTheme } from "../contexts/ThemeContext";
 const PROJECTS = [
   {
     id: "1",
+    img: "/personal-website/robotic_hand/Full Working setup.JPG",
+    url: "/projects/robotic-hand",
+    title: "Robotic Hand"
+  },
+  {
+    id: "2",
     img: "/personal-website/CNC_Final_CAD.png",
     url: "/projects/cnc-cad",
             title: "CNC Router CAD"
   },
   {
-    id: "2",
+    id: "3",
     img: "/personal-website/crosswalk_model.png",
     url: "/projects/crosswalk-model",
     title: "Walkable Cities"
   },
   {
-    id: "3",
+    id: "4",
     img: "/personal-website/Arduino/digital_thermometer.jpg",
     url: "/projects/embedded-systems",
     title: "Intro to Embedded Systems"
   },
   {
-    id: "4",
+    id: "5",
     img: "/personal-website/gear_box.jpg",
     url: "/projects/gear-box",
     title: "Gear Box"
   },
   {
-    id: "5",
+    id: "6",
     img: "/personal-website/piston(2).png",
     url: "/projects/piston",
     title: "Piston Assembly"
-  },
-  {
-    id: "6",
-    img: "/personal-website/robotic_hand/Full Working setup.JPG",
-    url: "/projects/robotic-hand",
-    title: "Robotic Hand"
   },
   {
     id: "7",
