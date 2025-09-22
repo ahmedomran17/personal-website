@@ -58,7 +58,7 @@ export default function About() {
       {/* Download Resume Button */}
       <div className="text-center mb-16">
         <a
-          href="/personal-website/Website Resume.pdf"
+          href="/personal-website/Ahmed-Omran-Resume.pdf"
           download
           className={`inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-base sm:text-lg shadow-lg transition-all duration-200 hover:scale-105 ${
             isDark 
