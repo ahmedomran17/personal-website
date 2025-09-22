@@ -125,18 +125,6 @@ const RoboticHand = () => {
         caption: "Demonstration of robotic hand assembly and initial testing",
         type: "video"
       },
-      {
-        title: "Live Hand Tracking",
-        url: "/personal-website/compv/computervision-handtracking.mp4",
-        caption: "Real-time hand tracking using computer vision (Mediapipe)",
-        type: "video"
-      },
-      {
-        title: "EMG Inference on Laptop",
-        url: "/personal-website/robotic_hand/EMG-infrence-on-laptop.mov",
-        caption: "Real-time EMG signal processing and inference on laptop for robotic hand control",
-        type: "video"
-      }
     ],
 
     models: [
@@ -374,24 +362,20 @@ const RoboticHand = () => {
         <section className="px-6 mb-16">
           <div className="max-w-6xl mx-auto">
             <h2 className={`text-3xl font-bold mb-8 text-center ${isDark ? 'text-white' : 'text-black'}`}>Final Product Demonstration</h2>
-            <div className="flex justify-center">
-              <div className="bg-gray-900 rounded-xl overflow-hidden mx-auto" style={{ maxWidth: '800px', aspectRatio: '16/9', minHeight: '450px' }}>
-                <video
-                  src="/personal-website/final-hand-demo.mov"
-                  className="w-full h-full object-contain"
-                  controls
-                  preload="metadata"
-                  poster="/personal-website/robotic_hand/robotic_hand.JPG"
-                  style={{ minHeight: '450px' }}
-                />
-              </div>
-            </div>
-                          <div className="mt-4 text-center">
-                <h3 className={`text-lg font-semibold mb-2 ${isDark ? 'text-white' : 'text-black'}`}>Complete Working Setup</h3>
-                <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                  EMG gesture recognition with Deep Learning Trained Model on ESP32-S3
-                </p>
-              </div>
+            <VideoCarousel videos={[
+              {
+                title: "Complete Working Setup",
+                url: "/personal-website/final-hand-demo.mov",
+                caption: "EMG gesture recognition with Deep Learning Trained Model on ESP32-S3",
+                type: "video"
+              },
+              {
+                title: "Computer Vision Hand Tracking",
+                url: "/personal-website/compv/computervision-handtracking.mp4",
+                caption: "Real-time hand tracking using computer vision (Mediapipe)",
+                type: "video"
+              }
+            ]} />
           </div>
         </section>
 
